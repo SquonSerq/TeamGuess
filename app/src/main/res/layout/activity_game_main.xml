@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GameMain">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/gameMainRcl"
+        android:layout_width="390dp"
+        android:layout_height="466dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/MainGameSkip"
+        android:layout_width="421dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="12dp"
+        android:onClick="updateListByButton"
+        android:text="Пропустить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameMainRcl" />
+
+    <Chronometer
+        android:id="@+id/MainGameChrono"
+        android:layout_width="158dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:textSize="40sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainGameSkip" />
+
+    <Button
+        android:id="@+id/MainGameUpdate"
+        android:layout_width="426dp"
+        android:layout_height="61dp"
+        android:layout_marginTop="12dp"
+        android:onClick="updateListByButton"
+        android:text="Обновить"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameMainRcl" />
+
+    <Button
+        android:id="@+id/MainGameStart"
+        android:layout_width="426dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="16dp"
+        android:onClick="startGame"
+        android:text="Начать"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainGameSkip" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#000000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/gameMainRcl" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
